@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zita | Developer Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+      color: #182238;
+      line-height: 1.7;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 8%;
+      background: #fff;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    nav h2 {
+      color: #2457a7;
+    }
+
+    nav a {
+      color: #182238;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 14px;
+    }
+
+    .hero {
+      background: #14213d;
+      color: white;
+      padding: 90px 8%;
+      text-align: center;
+    }
+
+    .hero p {
+      color: #dbe5ff;
+      margin: 12px auto;
+      max-width: 650px;
+    }
+
+    .hero h1 {
+      font-size: clamp(30px, 5vw, 48px);
+      margin-bottom: 12px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #78a6ff;
+      color: #14213d;
+      padding: 12px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 22px;
+    }
+
+    section {
+      background: white;
+      padding: 30px;
+      border-radius: 14px;
+      margin-bottom: 25px;
+      box-shadow: 0 5px 20px #14213d0b;
+    }
+
+    section h2 {
+      color: #2457a7;
+      margin-bottom: 16px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill {
+      background: #e8efff;
+      color: #214b8c;
+      padding: 7px 14px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    .project {
+      border: 1px solid #e2e7f0;
+      padding: 18px;
+      border-radius: 10px;
+      margin-top: 14px;
+    }
+
+    .project h3 {
+      margin-bottom: 8px;
+    }
+
+    .muted {
+      color: #647087;
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 28px;
+      color: #647087;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        padding: 18px 5%;
+      }
+
+      nav a {
+        margin-left: 0;
+        margin-right: 12px;
+      }
+
+      .hero {
+        padding: 65px 6%;
+      }
+
+      section {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <h2>Zita.dev</h2>
+    <div>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <h1>Hi, I'm Onyinyechikasi (Zita)</h1>
+    <p>Software Engineering Graduate | Aspiring Developer</p>
+    <p>
+      I enjoy solving problems with technology and exploring
+      software development, IT support and data analysis.
+    </p>
+    <a class="button" href="#projects">Explore My Work</a>
+  </header>
+
+  <main>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a Software Engineering graduate from Topfaith University
+        with an interest in building useful digital solutions and
+        supporting technology systems.
+      </p>
+      <p>
+        My experience includes IT troubleshooting, hardware support,
+        network issues, user account support and Power BI reporting.
+        I am continuing to develop my technical skills through practical projects.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <div class="skills">
+        <span class="skill">Python</span>
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">Flutter</span>
+        <span class="skill">Power BI</span>
+        <span class="skill">IT Support</span>
+        <span class="skill">Hardware Troubleshooting</span>
+        <span class="skill">Network Support</span>
+        <span class="skill">Microsoft Azure</span>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <h3>IT Support Intern / Technician</h3>
+      <p><strong>Indorama Petrochemicals Limited</strong></p>
+      <p class="muted">March 2025 – September 2025</p>
+      <p>
+        Assisted with hardware troubleshooting, user account support,
+        network issues and IT reporting. Contributed to technical support
+        activities and helped users resolve computer-related problems.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>My Projects</h2>
+      <p class="muted">
+        This portfolio is my first web development project.
+        More practical projects will be added as I build them.
+      </p>
+
+      <div class="project">
+        <h3>Personal Portfolio Website</h3>
+        <p>
+          A personal website built with HTML and CSS to introduce
+          my background, technical skills and career interests.
+        </p>
+        <p class="muted">Technologies: HTML, CSS</p>
+      </div>
+
+      <div class="project">
+        <h3>IT Support Ticket Dashboard</h3>
+        <p>
+          A planned data analysis project using sample support tickets
+          to explore issue categories, ticket status and resolution times.
+        </p>
+        <p class="muted">Planned project · Excel / Power BI</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Let's Connect</h2>
+      <p>
+        I'm open to entry-level software development, IT support
+        and technical support opportunities.
+      </p>
+      <a class="button"
+         href="https://www.linkedin.com/"
+         target="_blank"
+         rel="noopener noreferrer">Find me on LinkedIn</a>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Designed and built by Zita · 2026</p>
+  </footer>
+
+</body>
+</html>
